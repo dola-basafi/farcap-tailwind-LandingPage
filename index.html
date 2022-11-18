@@ -7,7 +7,7 @@
     <style type="text/tailwindcss">
       @layer utilities {
         .container {
-          @apply xl:w-[1440px] m-auto ;
+          @apply xl:w-[1440px] mx-auto p-10;
         }
         .txt-n {
           @apply text-base font-medium;
@@ -29,10 +29,8 @@
   <body>
     <!-- Navbar -->
     <section id="nav">
-      <div class="container grid grid-cols-3 bg-slate-400 text text-center">
-        <h3 class="self-center txt-n">
-          <span class="text-myOrange">JEZ </span> SALAD
-        </h3>
+      <div class="container grid grid-cols-3">
+        <h3 class="font-normal self-center text-xl"><span class="text-myOrange">JEZ </span> SALAD</h3>
         <ul class="txt-n flex justify-between items-center gap-3 text-center">
           <li class="hover:text-myOrange">
             <a href="#" class="h-full">Home</a>
@@ -41,8 +39,15 @@
           <li class="hover:text-myOrange"><a href="#">Contact</a></li>
           <li class="hover:text-myOrange"><a href="#">About Us</a></li>
         </ul>
-        <div class="text-center txt-n text-white self-center">
-          <button class="p-3 px-7 rounded-3xl bg-myOrange">Sign In</button>
+
+        <!-- btn -->
+
+        <div
+          class="text-center txt-n hover:text-white text-black hover:drop-shadow-lg"
+        >
+          <button class="p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+            Sign In
+          </button>
         </div>
       </div>
     </section>
@@ -50,7 +55,9 @@
     <section id="hero">
       <div class="container grid grid-cols-2 pt-16 justify-center items-center">
         <div class="left">
-          <button class="rounded-xl bg-[#FFF0DC] p-4 text-myOrange ">#1 Best Healthy Salad</button>
+          <button class="rounded-xl bg-[#FFF0DC] p-4 text-myOrange">
+            #1 Best Healthy Salad
+          </button>
           <h1 class="font-bold text-5xl pt-14">
             Skip The Diet, Just Eat Healthy With Jez Salad
           </h1>
@@ -58,28 +65,116 @@
             Imagine you don't need a diet because we provide healthy and
             delicious food for you!
           </p>
-          <div class=" txt-n text-white mt-12 ">
-            <button class="p-5 rounded-2xl bg-myOrange">Order Food</button>
+          <div
+            class="mt-12 txt-n hover:text-white text-black hover:drop-shadow-lg"
+          >
+            <button class="p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+              Order Food
+            </button>
           </div>
-          <div class="mt-24 grid grid-cols-3 gap-14 items-center ">
-            <div >
-              <p class="txt-n ">5.000+</p>
+          <div class="mt-24 grid grid-cols-3 gap-14 items-center">
+            <div>
+              <p class="txt-n">5.000+</p>
               <p class="txt-s">Costumer</p>
             </div>
-            <div >
-              <p class="txt-n ">8.000+</p>
+            <div>
+              <p class="txt-n text-xl">8.000+</p>
               <p class="txt-s">Delivery</p>
             </div>
-            <div >
-              <p class="txt-n ">1.000+</p>
+            <div>
+              <p class="txt-n">1.000+</p>
               <p class="txt-s">Ratings</p>
             </div>
-
           </div>
         </div>
         <div class="right">
           <img class="object-cover h-[700px]" src="img/bob.png" alt="" />
         </div>
+      </div>
+    </section>
+
+    <section id="choose">
+      <div class="grid grid-cols-2 gap-32 container pt-32">
+        <h1 class="font-bold text-4xl">
+          WHY CHOOSE US FOR <span class="text-myOrange">YOUR HEALTHY FOOD</span>
+        </h1>
+        <p class="txt-s pr-32">
+          We continue to consistently choose and maintain the quality of the
+          fruit served, so that it remains fresh and nutritious when you eat it.
+        </p>
+      </div>
+    </section>
+
+    <section id="archiv">
+      <div class="container grid grid-cols-3 pt-16 gap-16">
+        <div class="hover:drop-shadow-2xl p-4 bg-slate-100">
+          <img
+            class="p-5 bg-[#FFE8C8] rounded-xl"
+            src="img/industry1.png"
+            alt=""
+          />
+          <h3 class="font-medium text-xl mt-20">Own fruit orchard</h3>
+          <p class="txt-n pt-3">
+            Langsung dari Kebun Sendiri yang tersebar di setiap provinsi yang
+            memiliki cabang toko Jez Salad.
+          </p>
+          <div
+            class=" pt-6 txt-n  text-black "
+          >
+            <button class="hover:drop-shadow-lg hover:text-white p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+              Learn more <span>→</span>
+            </button>
+          </div>
+        </div>
+        <div class="hover:drop-shadow-2xl p-4 bg-slate-100">
+          <img
+            class="p-5 bg-[#FFE8C8] rounded-xl"
+            src="img/number-one1.png"
+            alt=""
+          />
+          <h3 class="font-medium text-xl mt-20">#1 Healthy Fruit Salad</h3>
+          <p class="txt-n pt-3">
+            The pioneer of healthy fruit salads that are delicious & suitable
+            for all people with the best quality assurance.
+          </p>
+          <div
+            class="pt-6 txt-n  text-black "
+          >
+            <button class="p-3 hover:drop-shadow-lg hover:text-white px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+              Learn more <span>→</span>
+            </button>
+          </div>
+        </div>
+        <div class="hover:drop-shadow-2xl p-4 bg-slate-100">
+          <img
+            class="p-5 bg-[#FFE8C8] rounded-xl"
+            src="img/trophy1.png"
+            alt=""
+          />
+          <h3 class="font-medium text-xl mt-20">100 Top Brand</h3>
+          <p class="txt-n pt-3">
+            We are one of the best brands in the Food and Beverage sector in
+            Indonesia.
+          </p>
+          <div
+            class="pt-6 txt-n  text-black "
+          >
+            <button class="hover:drop-shadow-lg hover:text-white p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+              Learn more <span>→</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="say">
+      <div class="container grid grid-cols-2 mt-24">
+        <div class="left ">
+          <h1>What Are People Saying About Us</h1>
+          <p class="pt-7">We are very happy if you are satisfied with our service and products, let's read pure reviews from customers who bought our products.</p>
+          <p class="pt-8" ><span class="font-bold text-5xl">02</span> <span class="txt-n text-[#CCCCCC]">/05</span></p>
+        </div>
+        <div class="right"></div>
       </div>
     </section>
 
