@@ -26,17 +26,20 @@
       rel="stylesheet"
     />
 
-  <!-- Bootstrap Icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
   </head>
   <body class="`bg-[#FFF8ED]">
     <!-- Navbar -->
     <section id="nav">
-      <div class="container grid grid-cols-3">
+      <div class="container grid grid-cols-2  lg:grid-cols-3">
         <h3 class="font-normal self-center text-xl">
           <span class="text-myOrange">JEZ </span> SALAD
         </h3>
-        <ul class="txt-n flex justify-between items-center gap-3 text-center">
+        <ul class="txt-n flex justify-between items-center gap-3 text-center ">
           <li class="hover:text-myOrange">
             <a href="#" class="h-full">Home</a>
           </li>
@@ -58,8 +61,8 @@
     </section>
 
     <section id="hero">
-      <div class="container grid grid-cols-2 pt-16 justify-center items-center">
-        <div class="left">
+      <div class="container grid lg:grid-cols-2 pt-16 justify-center items-center">
+        <div class="left ">
           <button class="rounded-xl bg-[#FFF0DC] p-4 text-myOrange">
             #1 Best Healthy Salad
           </button>
@@ -92,14 +95,14 @@
             </div>
           </div>
         </div>
-        <div class="right">
+        <div class="right col-start-1 row-start-1 lg:col-auto lg:row-auto">
           <img class="object-cover h-[700px]" src="img/bob.png" alt="" />
         </div>
       </div>
     </section>
 
     <section id="choose">
-      <div class="grid grid-cols-2 gap-32 container pt-32">
+      <div class="grid lg:grid-cols-2 gap-32 container pt-32">
         <h1 class="font-bold text-4xl">
           WHY CHOOSE US FOR <span class="text-myOrange">YOUR HEALTHY FOOD</span>
         </h1>
@@ -111,7 +114,7 @@
     </section>
 
     <section id="archiv">
-      <div class="container grid grid-cols-3 pt-16 gap-16">
+      <div class="container grid lg:grid-cols-3 pt-16 gap-16">
         <div class="hover:drop-shadow-2xl p-4 bg-slate-100">
           <img
             class="p-5 bg-[#FFE8C8] rounded-xl"
@@ -173,8 +176,8 @@
     </section>
 
     <section id="say">
-      <div class="container grid grid-cols-3 mt-24">
-        <div class="left">
+      <div class="container grid lg:grid-cols-3 gap-8 mt-24">
+        <div class="left justify-self-center">
           <h1 class="font-bold text-4xl">
             What Are People Saying <span class="text-myOrange"> About Us</span>
           </h1>
@@ -199,7 +202,7 @@
             <span class="font-black text-3xl">→</span>
           </button>
         </div>
-        <div class="right col-span-2 grid grid-cols-3 gap-7 pl-24">
+        <div class="right justify-self-center lg:col-span-2 grid grid-cols-3 gap-7 pl-24">
           <div>
             <img src="img/selena.png" alt="" />
             <p class="txt-s text-[#999999] mt-16">22 Years</p>
@@ -237,10 +240,10 @@
         <h1 class="font-bold text-4xl text-center mt-3">
           WHY CHOOSE US FOR <span class="text-myOrange">YOUR HEALTHY FOOD</span>
         </h1>
-        <div class="menu mt-16 grid grid-cols-3">
+        <div class="menu mt-16 gap-7 grid lg:grid-cols-3     ">
           <div
             style="background-image: url(img/red.png)"
-            class="text-white pl-10 pb-10 flex bg-no-repeat w-[370px] h-[520px]"
+            class= " justify-self-center text-white pl-10 pb-10 flex bg-no-repeat w-[370px] h-[520px]"
           >
             <div class="self-end">
               <p class="txt-s">Salad Yummy Red</p>
@@ -249,7 +252,7 @@
           </div>
           <div
             style="background-image: url(img/white.png)"
-            class="text-white pl-10 pb-10 flex bg-no-repeat w-[370px] h-[520px]"
+            class="justify-self-center text-white pl-10 pb-10 flex bg-no-repeat w-[370px] h-[520px]"
           >
             <div class="txt-s self-end">
               <p>Salad Yummy White</p>
@@ -258,7 +261,7 @@
           </div>
           <div
             style="background-image: url(img/mix.png)"
-            class="text-white pl-10 pb-10 flex bg-no-repeat w-[370px] h-[520px]"
+            class="justify-self-center text-white pl-10 pb-10 flex bg-no-repeat w-[370px] h-[520px]"
           >
             <div class="self-end">
               <p class="txt-s">Salad Yummy Mix 2</p>
@@ -268,7 +271,7 @@
         </div>
       </div>
     </section>
-
+<!-- subscribe -->
     <section id="subsc">
       <div class="container">
         <div class="text-center">
@@ -297,9 +300,11 @@
         </div>
       </div>
     </section>
-
+    <!-- footer -->
     <section id="footer">
-      <div class="container grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1  gap-28">
+      <div
+        class="container grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-28"
+      >
         <div class="justify-self-center md:justify-self-auto">
           <h3 class="font-normal self-center text-xl">
             <span class="text-myOrange">JEZ </span> SALAD
@@ -310,21 +315,32 @@
           </p>
           <p class="txt-n pt-16">©Copyright Jez Salad</p>
         </div>
-        <ul class="txt-n flex flex-col gap-6 justify-self-center md:justify-self-auto">
-          <li ><span  class="text-myOrange text-2xl">Feature</span>  </li>
+        <ul
+          class="txt-n flex flex-col gap-6 justify-self-center md:justify-self-auto"
+        >
+          <li><span class="text-myOrange text-2xl">Feature</span></li>
           <li>Menu</li>
           <li>Promo</li>
           <li>Contact</li>
           <li>About Us</li>
         </ul>
-        <ul class="txt-s flex flex-col gap-5 justify-self-center md:justify-self-auto">
+        <ul
+          class="txt-s flex flex-col gap-5 justify-self-center md:justify-self-auto"
+        >
           <li>Get in Touch</li>
-          <li class="flex gap-3"><i class=" bi bi-geo-alt text-myOrange "></i>8819 Ohio St. South Gate, CA 90280</li>
-            <li class="flex gap-3"> <i class=" bi bi-envelope text-myOrange "></i>Ourstudio@hello.com</li>
-            <li class="flex gap-3"> <i class=" bi bi-telephone text-myOrange"></i>+1 386-688-3295</li>
+          <li class="flex gap-3">
+            <i class="bi bi-geo-alt text-myOrange"></i>8819 Ohio St. South Gate,
+            CA 90280
+          </li>
+          <li class="flex gap-3">
+            <i class="bi bi-envelope text-myOrange"></i>Ourstudio@hello.com
+          </li>
+          <li class="flex gap-3">
+            <i class="bi bi-telephone text-myOrange"></i>+1 386-688-3295
+          </li>
         </ul>
         <div class="justify-self-center md:justify-self-auto">
-          <div class="icon text-myOrange flex  gap-8 text-2xl">
+          <div class="icon text-myOrange flex gap-8 text-2xl">
             <i class="bi bi-instagram"></i>
             <i class="bi bi-linkedin"></i>
             <i class="bi bi-twitter"></i>
