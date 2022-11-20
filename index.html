@@ -35,25 +35,31 @@
   <body class="`bg-[#FFF8ED]">
     <!-- Navbar -->
     <section id="nav">
-      <div class="container grid grid-cols-2  lg:grid-cols-3">
+      <div class="container grid grid-cols-2  lg:grid-cols-3 fixed">
         <h3 class="font-normal self-center text-xl">
           <span class="text-myOrange">JEZ </span> SALAD
         </h3>
-        <ul class="txt-n flex justify-between items-center gap-3 text-center ">
-          <li class="hover:text-myOrange">
-            <a href="#" class="h-full">Home</a>
-          </li>
-          <li class="hover:text-myOrange"><a href="#">Menu</a></li>
-          <li class="hover:text-myOrange"><a href="#">Contact</a></li>
-          <li class="hover:text-myOrange"><a href="#">About Us</a></li>
-        </ul>
+        <div class="lg:block hidden">
+
+          <ul class="txt-n flex justify-between items-center gap-3 text-center ">
+            <li class="hover:text-myOrange">
+              <a href="#" class="h-full">Home</a>
+            </li>
+            <li class="hover:text-myOrange"><a href="#">Menu</a></li>
+            <li class="hover:text-myOrange"><a href="#">Contact</a></li>
+            <li class="hover:text-myOrange"><a href="#">About Us</a></li>
+          </ul>
+        </div>
 
         <!-- btn -->
 
         <div
           class="text-center txt-n hover:text-white text-black hover:drop-shadow-lg"
         >
-          <button class="p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+        <button onclick="menu()" class="lg:hidden p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
+          <i class="bi bi-list"></i>
+        </button>
+          <button class="p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100 lg:block hidden">
             Sign In
           </button>
         </div>
