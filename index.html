@@ -32,16 +32,16 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
   </head>
-  <body class="`bg-[#FFF8ED]">
+  <body class="bg-[#FFF8ED]">
     <!-- Navbar -->
     <section id="nav">
-      <div class="container grid grid-cols-2  lg:grid-cols-3 fixed">
+      <div class="container grid grid-cols-2  lg:grid-cols-3 fixed bg-[#FFF8ED]/1 backdrop-blur-sm">
         <h3 class="font-normal self-center text-xl">
           <span class="text-myOrange">JEZ </span> SALAD
         </h3>
-        <div class="lg:block hidden">
+        <div class="flex-shrink-0 relative lg:flex hidden row-start-2  lg:row-start-1 lg:col-start-2  justify-between items-center" id="menu">
 
-          <ul class="txt-n flex justify-between items-center gap-3 text-center ">
+          <ul class=" txt-n flex-col lg:flex-row flex justify-between items-center lg:gap-3 gap-5 text-center ">
             <li class="hover:text-myOrange">
               <a href="#" class="h-full">Home</a>
             </li>
@@ -49,6 +49,10 @@
             <li class="hover:text-myOrange"><a href="#">Contact</a></li>
             <li class="hover:text-myOrange"><a href="#">About Us</a></li>
           </ul>
+
+          <button class="p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100   text-center ">
+            Sign In
+          </button>
         </div>
 
         <!-- btn -->
@@ -59,9 +63,7 @@
         <button onclick="menu()" class="lg:hidden p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100">
           <i class="bi bi-list"></i>
         </button>
-          <button class="p-3 px-7 rounded-3xl hover:bg-myOrange bg-slate-100 lg:block hidden">
-            Sign In
-          </button>
+          
         </div>
       </div>
     </section>
